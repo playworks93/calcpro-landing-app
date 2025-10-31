@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'basic_calculations' ? 'active' : ''}
-          onClick={() => setActiveTab('basic_calculations')}
+          className={activeTab === 'basic_arithmetic_operations' ? 'active' : ''}
+          onClick={() => setActiveTab('basic_arithmetic_operations')}
         >
-          Basic Calculations
+          Basic Arithmetic Operations
         </button>
         <button 
-          className={activeTab === 'graphing_and_charting' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_and_charting')}
+          className={activeTab === 'graphing_and_visualization_tools' ? 'active' : ''}
+          onClick={() => setActiveTab('graphing_and_visualization_tools')}
         >
-          Graphing And Charting
+          Graphing And Visualization Tools
         </button>
         <button 
-          className={activeTab === 'real_time_collaboration' ? 'active' : ''}
-          onClick={() => setActiveTab('real_time_collaboration')}
+          className={activeTab === 'history_log_of_calculations' ? 'active' : ''}
+          onClick={() => setActiveTab('history_log_of_calculations')}
         >
-          Real Time Collaboration
+          History Log Of Calculations
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'basic_calculations' && (
+        {activeTab === 'basic_arithmetic_operations' && (
           <div className="tab-content">
-            <h2>Basic Calculations</h2>
-            <p>Manage your basic calculations here.</p>
+            <h2>Basic Arithmetic Operations</h2>
+            <p>Manage your basic arithmetic operations here.</p>
           </div>
         )}
 
-        {activeTab === 'graphing_and_charting' && (
+        {activeTab === 'graphing_and_visualization_tools' && (
           <div className="tab-content">
-            <h2>Graphing and Charting</h2>
-            <p>Manage your graphing and charting here.</p>
+            <h2>Graphing and Visualization Tools</h2>
+            <p>Manage your graphing and visualization tools here.</p>
           </div>
         )}
 
-        {activeTab === 'real_time_collaboration' && (
+        {activeTab === 'history_log_of_calculations' && (
           <div className="tab-content">
-            <h2>Real-Time Collaboration</h2>
-            <p>Manage your real time collaboration here.</p>
+            <h2>History Log of Calculations</h2>
+            <p>Manage your history log of calculations here.</p>
           </div>
         )}
       </div>
