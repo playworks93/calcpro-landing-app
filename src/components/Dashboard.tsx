@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'basic_arithmetic_operations' ? 'active' : ''}
-          onClick={() => setActiveTab('basic_arithmetic_operations')}
+          className={activeTab === 'basic_calculations' ? 'active' : ''}
+          onClick={() => setActiveTab('basic_calculations')}
         >
-          Basic Arithmetic Operations
+          Basic Calculations
         </button>
         <button 
-          className={activeTab === 'advanced_scientific_calculations' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_scientific_calculations')}
+          className={activeTab === 'graphing_and_charting' ? 'active' : ''}
+          onClick={() => setActiveTab('graphing_and_charting')}
         >
-          Advanced Scientific Calculations
+          Graphing And Charting
         </button>
         <button 
-          className={activeTab === 'data_analytics_integration' ? 'active' : ''}
-          onClick={() => setActiveTab('data_analytics_integration')}
+          className={activeTab === 'real_time_collaboration' ? 'active' : ''}
+          onClick={() => setActiveTab('real_time_collaboration')}
         >
-          Data Analytics Integration
+          Real Time Collaboration
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'basic_arithmetic_operations' && (
+        {activeTab === 'basic_calculations' && (
           <div className="tab-content">
-            <h2>Basic Arithmetic Operations</h2>
-            <p>Manage your basic arithmetic operations here.</p>
+            <h2>Basic Calculations</h2>
+            <p>Manage your basic calculations here.</p>
           </div>
         )}
 
-        {activeTab === 'advanced_scientific_calculations' && (
+        {activeTab === 'graphing_and_charting' && (
           <div className="tab-content">
-            <h2>Advanced Scientific Calculations</h2>
-            <p>Manage your advanced scientific calculations here.</p>
+            <h2>Graphing and Charting</h2>
+            <p>Manage your graphing and charting here.</p>
           </div>
         )}
 
-        {activeTab === 'data_analytics_integration' && (
+        {activeTab === 'real_time_collaboration' && (
           <div className="tab-content">
-            <h2>Data Analytics Integration</h2>
-            <p>Manage your data analytics integration here.</p>
+            <h2>Real-Time Collaboration</h2>
+            <p>Manage your real time collaboration here.</p>
           </div>
         )}
       </div>
