@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import Calculator from './components/Calculator'
-import GraphDisplay from './components/GraphDisplay'
-import CollaborationPanel from './components/CollaborationPanel'
+import CalculatorDisplay from './components/CalculatorDisplay'
+import CalculatorButtons from './components/CalculatorButtons'
 import HistoryLog from './components/HistoryLog'
-import SettingsPanel from './components/SettingsPanel'
+import GraphingTool from './components/GraphingTool'
+import UserSettings from './components/UserSettings'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>CalcPro</h1>
-          <p className="tagline">Your Smart Calculator</p>
+          <p className="tagline">Empower Your Calculations</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>Basic Calculations</li>
-          <li>Graphing and Charting</li>
-          <li>Real-Time Collaboration</li>
-          <li>Historical Calculation Log</li>
+          <li>Basic Arithmetic Operations</li>
+          <li>Graphing and Visualization Tools</li>
+          <li>History Log of Calculations</li>
+          <li>Collaboration Features (Share & Comment)</li>
           <li>Customizable User Interface</li>
-          <li>Integration with Third-Party APIs</li>
+          <li>Multi-Device Sync</li>
           </ul>
         </div>
         <p>&copy; 2025 CalcPro. Built with React + TypeScript + Vite</p>
