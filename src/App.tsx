@@ -3,9 +3,9 @@ import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
 import AuthComponent from './components/AuthComponent'
 import CalculatorComponent from './components/CalculatorComponent'
-import AnalyticsDashboard from './components/AnalyticsDashboard'
-import CollaborationPanel from './components/CollaborationPanel'
-import HistoryLog from './components/HistoryLog'
+import GraphingComponent from './components/GraphingComponent'
+import CollaborationComponent from './components/CollaborationComponent'
+import HistoryComponent from './components/HistoryComponent'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>CalcPro</h1>
-          <p className="tagline">Advanced Calculations Made Easy</p>
+          <p className="tagline">Revolutionize Your Calculations</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Authentication</li>
-          <li>Advanced Mathematical Operations</li>
-          <li>Data Analytics Dashboard</li>
-          <li>Collaboration Tools (Real-time sharing)</li>
-          <li>History Log of Calculations</li>
-          <li>Customizable Shortcuts</li>
+          <li>User Authentication & Onboarding</li>
+          <li>Basic & Advanced Calculations</li>
+          <li>Real-time Graphing & Analytics</li>
+          <li>Collaboration Tools for Team Use</li>
+          <li>Integration with Third-party APIs</li>
+          <li>Customizable User Interface</li>
           </ul>
         </div>
         <p>&copy; 2025 CalcPro. Built with React + TypeScript + Vite</p>
