@@ -5,11 +5,11 @@ CalcPro - Built with React + TypeScript + Vite
 ## Features
 
 - Basic Arithmetic Operations
-- Graphing and Visualization Tools
-- History Log of Calculations
-- Collaboration Features (Share & Comment)
-- Customizable User Interface
-- Multi-Device Sync
+- Scientific Functions
+- Graphing Capabilities
+- History Tracking
+- Collaborative Calculation Sharing
+- Customizable Themes
 
 ## Tech Stack
 
