@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_authentication' ? 'active' : ''}
-          onClick={() => setActiveTab('user_authentication')}
+          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
+          onClick={() => setActiveTab('user_authentication_&_onboarding')}
         >
-          User Authentication
+          User Authentication & Onboarding
         </button>
         <button 
-          className={activeTab === 'advanced_mathematical_operations' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_mathematical_operations')}
+          className={activeTab === 'basic_&_advanced_calculations' ? 'active' : ''}
+          onClick={() => setActiveTab('basic_&_advanced_calculations')}
         >
-          Advanced Mathematical Operations
+          Basic & Advanced Calculations
         </button>
         <button 
-          className={activeTab === 'data_analytics_dashboard' ? 'active' : ''}
-          onClick={() => setActiveTab('data_analytics_dashboard')}
+          className={activeTab === 'real_time_graphing_&_analytics' ? 'active' : ''}
+          onClick={() => setActiveTab('real_time_graphing_&_analytics')}
         >
-          Data Analytics Dashboard
+          Real Time Graphing & Analytics
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_authentication' && (
+        {activeTab === 'user_authentication_&_onboarding' && (
           <div className="tab-content">
-            <h2>User Authentication</h2>
-            <p>Manage your user authentication here.</p>
+            <h2>User Authentication & Onboarding</h2>
+            <p>Manage your user authentication & onboarding here.</p>
           </div>
         )}
 
-        {activeTab === 'advanced_mathematical_operations' && (
+        {activeTab === 'basic_&_advanced_calculations' && (
           <div className="tab-content">
-            <h2>Advanced Mathematical Operations</h2>
-            <p>Manage your advanced mathematical operations here.</p>
+            <h2>Basic & Advanced Calculations</h2>
+            <p>Manage your basic & advanced calculations here.</p>
           </div>
         )}
 
-        {activeTab === 'data_analytics_dashboard' && (
+        {activeTab === 'real_time_graphing_&_analytics' && (
           <div className="tab-content">
-            <h2>Data Analytics Dashboard</h2>
-            <p>Manage your data analytics dashboard here.</p>
+            <h2>Real-time Graphing & Analytics</h2>
+            <p>Manage your real time graphing & analytics here.</p>
           </div>
         )}
       </div>
