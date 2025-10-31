@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'basic_arithmetic_operations' ? 'active' : ''}
-          onClick={() => setActiveTab('basic_arithmetic_operations')}
+          className={activeTab === 'user_authentication' ? 'active' : ''}
+          onClick={() => setActiveTab('user_authentication')}
         >
-          Basic Arithmetic Operations
+          User Authentication
         </button>
         <button 
-          className={activeTab === 'scientific_calculator_functions' ? 'active' : ''}
-          onClick={() => setActiveTab('scientific_calculator_functions')}
+          className={activeTab === 'advanced_mathematical_operations' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_mathematical_operations')}
         >
-          Scientific Calculator Functions
+          Advanced Mathematical Operations
         </button>
         <button 
-          className={activeTab === 'graphing_and_visualizations' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_and_visualizations')}
+          className={activeTab === 'data_analytics_dashboard' ? 'active' : ''}
+          onClick={() => setActiveTab('data_analytics_dashboard')}
         >
-          Graphing And Visualizations
+          Data Analytics Dashboard
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'basic_arithmetic_operations' && (
+        {activeTab === 'user_authentication' && (
           <div className="tab-content">
-            <h2>Basic Arithmetic Operations</h2>
-            <p>Manage your basic arithmetic operations here.</p>
+            <h2>User Authentication</h2>
+            <p>Manage your user authentication here.</p>
           </div>
         )}
 
-        {activeTab === 'scientific_calculator_functions' && (
+        {activeTab === 'advanced_mathematical_operations' && (
           <div className="tab-content">
-            <h2>Scientific Calculator Functions</h2>
-            <p>Manage your scientific calculator functions here.</p>
+            <h2>Advanced Mathematical Operations</h2>
+            <p>Manage your advanced mathematical operations here.</p>
           </div>
         )}
 
-        {activeTab === 'graphing_and_visualizations' && (
+        {activeTab === 'data_analytics_dashboard' && (
           <div className="tab-content">
-            <h2>Graphing and Visualizations</h2>
-            <p>Manage your graphing and visualizations here.</p>
+            <h2>Data Analytics Dashboard</h2>
+            <p>Manage your data analytics dashboard here.</p>
           </div>
         )}
       </div>
