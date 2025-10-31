@@ -5,11 +5,11 @@ CalcPro - Built with React + TypeScript + Vite
 ## Features
 
 - User Authentication & Onboarding
-- Basic Arithmetic Functions
-- Scientific Calculations
-- Graphing Capabilities
-- Historical Data Insights
-- Customizable User Interface
+- Advanced Calculation Functionality
+- Data Visualization & Analytics
+- Collaborative Calculation Sessions
+- History & Favorites Management
+- Customizable Calculator Interface
 
 ## Tech Stack
 
