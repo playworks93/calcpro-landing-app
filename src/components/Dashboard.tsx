@@ -21,16 +21,16 @@ const Dashboard = (props: DashboardProps) => {
           Basic Arithmetic Operations
         </button>
         <button 
-          className={activeTab === 'graphing_and_visualization_tools' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_and_visualization_tools')}
+          className={activeTab === 'scientific_functions' ? 'active' : ''}
+          onClick={() => setActiveTab('scientific_functions')}
         >
-          Graphing And Visualization Tools
+          Scientific Functions
         </button>
         <button 
-          className={activeTab === 'history_log_of_calculations' ? 'active' : ''}
-          onClick={() => setActiveTab('history_log_of_calculations')}
+          className={activeTab === 'graphing_capabilities' ? 'active' : ''}
+          onClick={() => setActiveTab('graphing_capabilities')}
         >
-          History Log Of Calculations
+          Graphing Capabilities
         </button>
       </nav>
 
@@ -62,17 +62,17 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'graphing_and_visualization_tools' && (
+        {activeTab === 'scientific_functions' && (
           <div className="tab-content">
-            <h2>Graphing and Visualization Tools</h2>
-            <p>Manage your graphing and visualization tools here.</p>
+            <h2>Scientific Functions</h2>
+            <p>Manage your scientific functions here.</p>
           </div>
         )}
 
-        {activeTab === 'history_log_of_calculations' && (
+        {activeTab === 'graphing_capabilities' && (
           <div className="tab-content">
-            <h2>History Log of Calculations</h2>
-            <p>Manage your history log of calculations here.</p>
+            <h2>Graphing Capabilities</h2>
+            <p>Manage your graphing capabilities here.</p>
           </div>
         )}
       </div>
