@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import AuthComponent from './components/AuthComponent'
-import CalculatorComponent from './components/CalculatorComponent'
-import HistoryComponent from './components/HistoryComponent'
-import GraphComponent from './components/GraphComponent'
-import UserSettingsComponent from './components/UserSettingsComponent'
+import Calculator from './components/Calculator'
+import GraphingTool from './components/GraphingTool'
+import UserDashboard from './components/UserDashboard'
+import AuthenticationModal from './components/AuthenticationModal'
+import TemplateManager from './components/TemplateManager'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>CalcPro</h1>
-          <p className="tagline">Intuitive Calculations, Powerful Insights</p>
+          <p className="tagline">Advanced Calculations, Simplified</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Authentication & Onboarding</li>
-          <li>Basic Arithmetic Operations</li>
-          <li>Advanced Scientific Functions</li>
-          <li>Graphing Capabilities</li>
-          <li>History Tracking and Management</li>
-          <li>Customizable User Interface</li>
+          <li>Real-time Collaborative Calculations</li>
+          <li>Advanced Graphing and Visualization</li>
+          <li>Customizable Calculation Templates</li>
+          <li>Multi-Language Support</li>
+          <li>History and Analytics Dashboard</li>
+          <li>User Authentication and Management</li>
           </ul>
         </div>
         <p>&copy; 2025 CalcPro. Built with React + TypeScript + Vite</p>
