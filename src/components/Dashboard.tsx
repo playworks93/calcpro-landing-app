@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
-          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
-          onClick={() => setActiveTab('user_authentication_&_onboarding')}
+          className={activeTab === 'real_time_collaborative_calculations' ? 'active' : ''}
+          onClick={() => setActiveTab('real_time_collaborative_calculations')}
         >
-          User Authentication & Onboarding
+          Real Time Collaborative Calculations
         </button>
         <button 
-          className={activeTab === 'basic_arithmetic_operations' ? 'active' : ''}
-          onClick={() => setActiveTab('basic_arithmetic_operations')}
+          className={activeTab === 'advanced_graphing_and_visualization' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_graphing_and_visualization')}
         >
-          Basic Arithmetic Operations
+          Advanced Graphing And Visualization
         </button>
         <button 
-          className={activeTab === 'advanced_scientific_functions' ? 'active' : ''}
-          onClick={() => setActiveTab('advanced_scientific_functions')}
+          className={activeTab === 'customizable_calculation_templates' ? 'active' : ''}
+          onClick={() => setActiveTab('customizable_calculation_templates')}
         >
-          Advanced Scientific Functions
+          Customizable Calculation Templates
         </button>
       </nav>
 
@@ -55,24 +55,24 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'user_authentication_&_onboarding' && (
+        {activeTab === 'real_time_collaborative_calculations' && (
           <div className="tab-content">
-            <h2>User Authentication & Onboarding</h2>
-            <p>Manage your user authentication & onboarding here.</p>
+            <h2>Real-time Collaborative Calculations</h2>
+            <p>Manage your real time collaborative calculations here.</p>
           </div>
         )}
 
-        {activeTab === 'basic_arithmetic_operations' && (
+        {activeTab === 'advanced_graphing_and_visualization' && (
           <div className="tab-content">
-            <h2>Basic Arithmetic Operations</h2>
-            <p>Manage your basic arithmetic operations here.</p>
+            <h2>Advanced Graphing and Visualization</h2>
+            <p>Manage your advanced graphing and visualization here.</p>
           </div>
         )}
 
-        {activeTab === 'advanced_scientific_functions' && (
+        {activeTab === 'customizable_calculation_templates' && (
           <div className="tab-content">
-            <h2>Advanced Scientific Functions</h2>
-            <p>Manage your advanced scientific functions here.</p>
+            <h2>Customizable Calculation Templates</h2>
+            <p>Manage your customizable calculation templates here.</p>
           </div>
         )}
       </div>
