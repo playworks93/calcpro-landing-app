@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import CalculatorDisplay from './components/CalculatorDisplay'
-import ButtonPanel from './components/ButtonPanel'
+import AuthComponent from './components/AuthComponent'
+import CalculatorComponent from './components/CalculatorComponent'
+import AnalyticsDashboard from './components/AnalyticsDashboard'
+import CollaborationPanel from './components/CollaborationPanel'
 import HistoryLog from './components/HistoryLog'
-import GraphDisplay from './components/GraphDisplay'
-import SettingsModal from './components/SettingsModal'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>CalcPro</h1>
-          <p className="tagline">Precision Calculations Made Easy</p>
+          <p className="tagline">Advanced Calculations Made Easy</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>Basic Arithmetic Operations</li>
-          <li>Scientific Calculator Functions</li>
-          <li>Graphing and Visualizations</li>
-          <li>History of Calculations</li>
-          <li>Collaborative Sharing of Results</li>
-          <li>Customizable User Interface</li>
+          <li>User Authentication</li>
+          <li>Advanced Mathematical Operations</li>
+          <li>Data Analytics Dashboard</li>
+          <li>Collaboration Tools (Real-time sharing)</li>
+          <li>History Log of Calculations</li>
+          <li>Customizable Shortcuts</li>
           </ul>
         </div>
         <p>&copy; 2025 CalcPro. Built with React + TypeScript + Vite</p>
