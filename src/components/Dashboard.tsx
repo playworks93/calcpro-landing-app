@@ -15,22 +15,22 @@ const Dashboard = (props: DashboardProps) => {
           Overview
         </button>
         <button 
+          className={activeTab === 'user_authentication_&_onboarding' ? 'active' : ''}
+          onClick={() => setActiveTab('user_authentication_&_onboarding')}
+        >
+          User Authentication & Onboarding
+        </button>
+        <button 
           className={activeTab === 'basic_arithmetic_operations' ? 'active' : ''}
           onClick={() => setActiveTab('basic_arithmetic_operations')}
         >
           Basic Arithmetic Operations
         </button>
         <button 
-          className={activeTab === 'graphing_and_visualizations' ? 'active' : ''}
-          onClick={() => setActiveTab('graphing_and_visualizations')}
+          className={activeTab === 'advanced_scientific_functions' ? 'active' : ''}
+          onClick={() => setActiveTab('advanced_scientific_functions')}
         >
-          Graphing And Visualizations
-        </button>
-        <button 
-          className={activeTab === 'scientific_calculations' ? 'active' : ''}
-          onClick={() => setActiveTab('scientific_calculations')}
-        >
-          Scientific Calculations
+          Advanced Scientific Functions
         </button>
       </nav>
 
@@ -55,6 +55,13 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
+        {activeTab === 'user_authentication_&_onboarding' && (
+          <div className="tab-content">
+            <h2>User Authentication & Onboarding</h2>
+            <p>Manage your user authentication & onboarding here.</p>
+          </div>
+        )}
+
         {activeTab === 'basic_arithmetic_operations' && (
           <div className="tab-content">
             <h2>Basic Arithmetic Operations</h2>
@@ -62,17 +69,10 @@ const Dashboard = (props: DashboardProps) => {
           </div>
         )}
 
-        {activeTab === 'graphing_and_visualizations' && (
+        {activeTab === 'advanced_scientific_functions' && (
           <div className="tab-content">
-            <h2>Graphing and Visualizations</h2>
-            <p>Manage your graphing and visualizations here.</p>
-          </div>
-        )}
-
-        {activeTab === 'scientific_calculations' && (
-          <div className="tab-content">
-            <h2>Scientific Calculations</h2>
-            <p>Manage your scientific calculations here.</p>
+            <h2>Advanced Scientific Functions</h2>
+            <p>Manage your advanced scientific functions here.</p>
           </div>
         )}
       </div>
